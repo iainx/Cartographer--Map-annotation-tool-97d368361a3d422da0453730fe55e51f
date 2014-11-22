@@ -4,11 +4,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cartographer | Map annotation tool</title>
 
-	
+	<script src="prettyPhoto/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+	<script src="prettyPhoto/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>	
 	<script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;appId=385205984962960&amp;version=v2.0"></script>
 	
 
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 <style>
 @import url(http://fonts.googleapis.com/css?family=Raleway);
@@ -121,6 +123,18 @@ img.appstore {
 	left: 21.5%;
 	width: 57.6%;
 }
+
+.macbook a {
+	color:inherit;
+	text-decoration:none;
+}
+
+.playbutton {
+	position: absolute;
+	top: 34%;
+	left: 45%;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Raleway", sans-serif;
 	font-weight: normal;
@@ -212,7 +226,8 @@ h1, h2, h3, h4, h5, h6 {
 	</div>
 	<div id="right">
 		<div class="macbook">
-			<img src="http://a5.mzstatic.com/us/r30/Purple1/v4/0c/d3/c9/0cd3c92b-7d93-1028-a975-7dd35d024c10/screen800x500.jpeg">
+			<a href="https://vimeo.com/109365173" rel="prettyPhoto"><img src="http://a5.mzstatic.com/us/r30/Purple1/v4/0c/d3/c9/0cd3c92b-7d93-1028-a975-7dd35d024c10/screen800x500.jpeg">
+			<i class="fa fa-play-circle-o fa-5x playbutton"></i></a>
 		</div>
 	</div>
 </div>
@@ -224,9 +239,8 @@ h1, h2, h3, h4, h5, h6 {
 </div>
 
 <div id="screenshots">
-	
-		<img src="http://a1.mzstatic.com/us/r30/Purple5/v4/49/b2/75/49b275b4-0cab-f86a-c128-264178e2f118/screen800x500.jpeg">
-	
+		<a href="http://a5.mzstatic.com/us/r30/Purple1/v4/0c/d3/c9/0cd3c92b-7d93-1028-a975-7dd35d024c10/screen800x500.jpeg" rel="prettyPhoto"><img src="http://a5.mzstatic.com/us/r30/Purple1/v4/0c/d3/c9/0cd3c92b-7d93-1028-a975-7dd35d024c10/screen800x500.jpeg"></a>
+		<a href="http://a1.mzstatic.com/us/r30/Purple5/v4/49/b2/75/49b275b4-0cab-f86a-c128-264178e2f118/screen800x500.jpeg" rel="prettyPhoto"><img src="http://a1.mzstatic.com/us/r30/Purple5/v4/49/b2/75/49b275b4-0cab-f86a-c128-264178e2f118/screen800x500.jpeg"></a>	
 </div>
 
 
@@ -262,5 +276,9 @@ Landing page created automatically with <a href="http://app-stop.appspot.com">Ap
 
 </div>
 
-
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function(){
+    $("a[rel^='prettyPhoto']").prettyPhoto();
+  });
+</script>
 </body></html>
